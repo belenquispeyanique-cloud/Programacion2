@@ -14,7 +14,7 @@ class EcuacionLineal:
             return False
     def getX(self):
         if self.tieneSolucion():
-            x = ((self.__e*self.__d5)-(self.__b*self.__f))/((self.__a*self.__d)-(self.__b*self.__c))
+            x = ((self.__e*self.__d)-(self.__b*self.__f))/((self.__a*self.__d)-(self.__b*self.__c))
             return x
     def getY(self):
         if self.tieneSolucion():
@@ -35,3 +35,4 @@ class Main ():
         print("y: ",ecuacion.getY(), end=", ")
     else:
         print("la ecuacion no tiene solucion")
+
