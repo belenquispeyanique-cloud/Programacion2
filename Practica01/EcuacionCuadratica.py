@@ -21,14 +21,14 @@ class EcuacionCuadratica:
             r2 = ((- self.__b) - math.sqrt(self.getDiscriminante())) / (2 * self.__a)
             return r2
 class Main():
-    a= int(input("a: "))
-    b= int(input("b: "))
-    c= int(input("c: "))
-    ecuacion = EcuacionCuadratica( a, b, c)
+    a= float(input("a: "))
+    b= float(input("b: "))
+    c= float(input("c: "))
+    ecuacion = EcuacionCuadratica   ( a, b, c)
     if(ecuacion.getDiscriminante() > 0):
-        print("La ecuacion tiene dos raices: ",ecuacion.getRaiz1(), "y",ecuacion.getRaiz2())
+        print(ecuacion.__str__())
     elif(ecuacion.getDiscriminante() == 0):
-        print("la ecuacion tiene una raiz, ecuacion.getRaiz1")
+        print(f"La ecuacion  tiene una raiz {ecuacion.getRaiz1():.0f}")
     else:
-
         print("la ecuacion no tiene racices reales")
+
