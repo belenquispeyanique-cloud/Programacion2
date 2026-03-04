@@ -1,6 +1,6 @@
 import math
 
-class EcuacionLineal:
+class EcuacionCuadratica:
     def __init__(self, a, b, c):
         self.__a = a
         self.__b = b
@@ -24,10 +24,11 @@ class Main():
     a= int(input("a: "))
     b= int(input("b: "))
     c= int(input("c: "))
-    ecuacion = EcuacionLineal( a, b, c)
+    ecuacion = EcuacionCuadratica( a, b, c)
     if(ecuacion.getDiscriminante() > 0):
         print("La ecuacion tiene dos raices: ",ecuacion.getRaiz1(), "y",ecuacion.getRaiz2())
     elif(ecuacion.getDiscriminante() == 0):
         print("la ecuacion tiene una raiz, ecuacion.getRaiz1")
     else:
+
         print("la ecuacion no tiene racices reales")
